@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="DEBUG">
+
+    <Appenders>
+
+        <Console name="CONSOLE" target="SYSTEM_OUT" threshold="DEBUG">
+            <PatternLayout pattern="[%t] %d{HH:mm:ss} %-5p %-20C{1} L:%-4L - %m%n"/>
+        </Console>
+
+       
+
+    </Appenders>
+
+    <Loggers>
+        <Logger name="org" level="warn">
+         
+        </Logger>
+
+        <Logger name="tw.com.hyweb.mybuddylinebot" level="debug">
+            
+        </Logger>
+        <Root level="debug">
+            <AppenderRef ref="CONSOLE"/>
+        </Root>
+    </Loggers>
+</Configuration>
